@@ -2,7 +2,7 @@ from __future__ import annotations
 
 from mysql.connector.connection import MySQLConnection
 
-from db import execute, fetch_all
+from .db import execute, fetch_all
 
 
 def listar_incidencias_activas(conn: MySQLConnection) -> list[dict]:
